@@ -27,3 +27,13 @@ function makeTabActive() {
         }
     }
 }
+
+// Show back to top button when scrolling
+window.addEventListener('scroll', function() {
+    var toTopButton = document.querySelector('.toplink');
+    if (window.scrollY > 200) {
+      toTopButton.classList.add('show');
+    } else {
+      toTopButton.classList.remove('show');
+    }
+  });
