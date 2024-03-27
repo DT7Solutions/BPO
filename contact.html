@@ -36,14 +36,17 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    
     <!-- StyleSheet link  Custome CSS -->
     <link href="assets/css/bpo.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 <!-- Header  -->
-<div class="sub-banner">
+<div class="banner_outer sub-banner">
     <header class="header">
         <div class="main-header">
             <div class="container-fluid">
@@ -53,11 +56,11 @@
                             <img src="./assets/images/logo-279x67.png" alt="logo" class="img-fluid" onerror="this.src='./assets/images/logo.png';">
                         </figure>
                     </a>
-                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
@@ -69,6 +72,9 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./service.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./faq.html">FAQ'S</a>
                             </li>
                             <li class="nav-space nav-item dropdown">
                                 <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -88,20 +94,32 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pricing.html">Pricing</a>
-                            </li>
-                            <li class="nav-space nav-item active">
-                                <a class="nav-link" href="./contact.html">Contact us</a>
+                            <li class="nav-space nav-item d-none">
+                                <a class="nav-link active" href="./contact.html">Contact us</a>
                             </li>
                         </ul>
                         <div class="last_list">
-                            <figure class="header-headphoneicon mb-0"><img class="img-fluid" src="./assets/images/header-headphoneicon.png" alt=""></figure>
                             <div class="content">
+                                <i class="fa-solid fa-headset"></i>
+                                <a class="call_us text-decoration-none last_list_atag" href="tel:+61383766284">Call Us : +61 3 8376 6284</a>
+                            </div>
+                        </div>
+                        <div class="header-btn">
+                            <a class="get_started text-decoration-none" href="./contact.html">Get Started</a>
+                        </div>
+
+                        <div class="last_list d-none">
+                            <figure class="header-headphoneicon mb-0">
+                                <i class="fa-solid fa-headset"></i>
+                                <!-- <img class="img-fluid" src="./assets/images/header-headphoneicon.png" alt=""> -->
+                            </figure>
+                            <div class="content">
+                                <!-- <span><i class="fa-solid fa-headset"></i></span> -->
                                 <span>Get Support</span>
                                 <a class="text-decoration-none last_list_atag" href="tel:+61383766284">+61 3 8376 6284</a>
                             </div>
                         </div>
+
                     </div>
                 </nav>
             </div>
@@ -117,31 +135,20 @@
             </div>
         </div>
     </header>
-    <section class="banner-section banner-section3">
-        <figure class="banner-backgroundimage mb-0">
-            <img src="./assets/images/contactbanner-background.jpg" alt="" class="img-fluid">
-        </figure>
+    <!-- Contact -->
+    <section class="contact-section contactpage">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-5 col-md-6 col-sm-12 col-12 column">
-                    <div class="banner_content" data-aos="fade-right">
-                        <div class="box">
-                            <div class="years">
-                                <span class="text-white value counter">10</span>
-                                <sup class="text-white mb-0 plus">+</sup>
-                                <span class="text-white text">Years Of Experience</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h1>Contact Us</h1>
-                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incidi.</p>
-                        </div>
-                        <figure class="banner-leftbottomlayer mb-0">
-                            <img src="./assets/images/subbanner-leftbottomlayer.png" alt="" class="img-fluid">
-                        </figure>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="contact_content" data-aos="fade-left">
+                        <h6>Contact</h6>
+                        <h1 class="mb-1"><span>Schedule a call </span>with us to</h1>
+                        <h1 class="mb-3">see if we can help</h1>
+                        <p class="text-size-16">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est tempora incidunt ut 
+                            labore et dolore
+                        </p>
                     </div>
-                </div>
-                <div class="col-lg-7 col-md-6 col-sm-12 col-12 d-md-block d-none">
                 </div>
             </div>
         </div>
@@ -276,83 +283,150 @@
         </div>
     </div>
 </section>
-<!-- Footer -->
-<div class="footer-section">
-    <div class="container">
-        <figure class="footer-backgroundlayer mb-0">
-            <img src="./assets/images/footer-backgroundlayer.png" alt="" class="img-fluid">
-        </figure>
-        <div class="middle-portion">
-            <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 order-lg-2 order-md-2 order-sm-2 order-xs-2">
-                    <ul class="list-unstyled image">
-                        <li>
-                            <a href="./index.html">
-                                <figure class="footer-logo">
-                                    <img src="./assets/images/footer-logo-101x77.png" alt="footer logo" class="img-fluid" onerror="this.src='./assets/images/footer-logo.png';">
-                                </figure>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-6 order-lg-1 order-md-1 order-sm-1 order-xs-1">
-                    <ul class="links mb-0 list-unstyled">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About US</a></li>
-                        <li><a href="./service.html">Services</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-6 order-lg-3 order-md-3 order-sm-3 order-xs-3">
-                    <ul class="links2 mb-0 list-unstyled">
-                        <li class="links"><a href="./blog.html">Blogs</a></li>
-                        <li class="links"><a href="./pricing.html">Pricing</a></li>
-                        <li class="links"><a href="./contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
 
+    <!-- Process -->
+    <section class="process-section process-new">
+        <hr class="long-line">
+        <figure class="process-backlayer mb-0">
+            <img src="./assets/images/process-backlayer.png" alt="" class="img-fluid">
+        </figure>
+        <div class="container">
             <div class="row">
-                <div class="col-lg-1 col-md-1 col-sm-12 col-12"></div>
-                <div class="col-lg-10 col-md-10 col-sm-12 col-12">
-                    <form method="POST">
-                        <div class="form-row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <input type="email" name="email" id="emailadd" class="form-control upper_layer" placeholder="Enter Email Address">
-                                <div class="input-group-append form-button">
-                                    <button class="btn subscribe_now" name="btnsubmit" id="submitbtn" type="submit">Subscribe</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-1 col-md-1 col-sm-12 col-12"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12"></div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="icon">
-                        <div class="social-icons">
-                            <ul class="mb-0 list-unstyled">
-                                <li><a href="" class="text-decoration-none"><i class="fa-brands fa-twitter social-networks"></i></a></li>
-                                <li><a href="" class="text-decoration-none"><i class="fa-brands fa-facebook-f social-networks"></i></a></li>
-                                <li><a href="" class="text-decoration-none"><i class="fa-brands fa-instagram social-networks"></i></a></li>
-                                <li><a href="" class="text-decoration-none"><i class="fa-brands fa-linkedin-in social-networks"></i></a></li>                            
-                            </ul>
-                        </div>
+                <div class="col-12">
+                    <div class="process_content position-relative" data-aos="fade-right">
+                        <h6>Our Process</h6>
+                        <!-- <figure class="line"><img src="./assets/images/about-line.png" alt="" class="img-fluid"></figure> -->
+                        <h1 class="mb-1">How Does The<span>Personalized</span></h1>
+                        <h1>Approach<span>Work?</span></h1>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12"></div>
+            </div>
+            <div class="row position-relative">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="box-outer">
+                        <div class="circle">
+                            <h4>01</h4>
+                            <div class="line mb-0"></div>
+                            <i class="fa-solid fa-circle-dot"></i>
+                        </div>
+                    </div>
+                    <div class="process-box box1-mb">
+                        <h5>Tell us About Your Ideal Assistant</h5>
+                        <hr class="line">
+                        <p class="text-size-16 mb-0">Lorem ipsum dolor sit amet cons ectetur adipisicing elit sed do eiusmod tempor incididunt ut labor.</p>
+                    </div>  
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="box-outer">
+                        <div class="circle">
+                            <h4>02</h4>
+                            <div class="line mb-0"></div>
+                            <i class="fa-solid fa-circle-dot"></i>
+                        </div>
+                    </div>
+                    <div class="process-box">
+                        <h5>Meet & Approval Your Assistant</h5>
+                        <hr class="line">
+                        <p class="text-size-16 mb-0">Lorem ipsum dolor sit amet cons ectetur adipisicing elit sed do eiusmod tempor incididunt ut labor.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="box-outer">
+                        <div class="circle">
+                            <h4>03</h4>
+                            <div class="line mb-0"></div>
+                            <i class="fa-solid fa-circle-dot"></i>
+                        </div>
+                    </div>
+                    <div class="process-box">
+                        <h5 class="heading3">Launch and Track</h5>
+                        <hr class="line">
+                        <p class="text-size-16 mb-0">Lorem ipsum dolor sit amet cons ectetur adipisicing elit sed do eiusmod tempor incididunt ut labor.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="bottom-portion">
-        <div class="copyright col-xl-12"> 
-            <p class="text-white text-size-16 mb-0">© Copyright 2023 by The VA Authority.com</p>
+    </section>
+    <!-- Footer -->
+    <div class="footer-section footer-new">
+        <div class="container">
+            <div class="middle-portion">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 order-lg-2 order-md-2 order-sm-2 order-xs-2">
+                        <ul class="list-unstyled image">
+                            <li>
+                                <a href="./index.html">
+                                    <figure class="footer-logo">
+                                        <img src="./assets/images/footer-logo-101x77.png" alt="footer logo" class="img-fluid" onerror="this.src='./assets/images/footer-logo.png';">
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-3 order-lg-1 order-md-1 order-sm-1 order-xs-2">
+                        <ul class="links mb-0 list-unstyled">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About US</a></li>
+                            <li><a href="./service.html">Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-3 order-lg-3 order-md-3 order-sm-3 order-xs-3">
+                        <ul class="links2 mb-0 list-unstyled">
+                            <li class="links"><a href="./blog.html">Blogs</a></li>
+                            <li class="links"><a href="./pricing.html">Pricing</a></li>
+                            <li class="links"><a href="./contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row d-none">
+                    <div class="col-lg-1 col-md-1 col-sm-12 col-12"></div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-12">
+                        <form method="POST">
+                            <div class="form-row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input type="email" name="email" id="emailadd" class="form-control upper_layer" placeholder="Enter Email Address">
+                                    <div class="input-group-append form-button">
+                                        <button class="btn subscribe_now" name="btnsubmit" id="submitbtn" type="submit">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-12 col-12"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="icon">
+                            <div class="social-icons">
+                                <ul class="mt-3 mb-3 list-unstyled">
+                                    <li><a href="" class="text-decoration-none"><i class="fa-brands fa-twitter social-networks"></i></a></li>
+                                    <li><a href="" class="text-decoration-none"><i class="fa-brands fa-facebook-f social-networks"></i></a></li>
+                                    <li><a href="" class="text-decoration-none"><i class="fa-brands fa-instagram social-networks"></i></a></li>
+                                    <li><a href="" class="text-decoration-none"><i class="fa-brands fa-linkedin-in social-networks"></i></a></li>                            
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12"></div>
+                </div>
+            </div>
         </div>
+        <div class="bottom-portion">
+            <div class="copyright col-xl-12 d-md-flex justify-content-md-between">
+                <p class="text-white text-size-18 mb-0">
+                    <a href="https://www.thevaauthority.com" target="_blank" class="text-white">© Copyright 2024 by The VA Authority.com</a>
+                </p>
+                <p class="text-white text-size-18 mb-0">
+                    <a href="https://www.dt7solutions.com" target="_blank" class="text-white">Developed By DT7 Solutions</a>
+                </p>
+            </div>
+        </div>
+        
     </div>
-</div>
-<!-- Back to Top Button -->
-<a class="toplink" href="#" title="Back to top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+    <!-- Back to Top Button -->
+    <a class="toplink" href="#" title="Back to top" aria-label="Back to top" data-aos="fade-down"><i class="fas fa-arrow-up"></i></a>
 
 
 <!-- Latest compiled JavaScript -->

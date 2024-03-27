@@ -522,6 +522,9 @@ body{
   top: 8%;
   right: 0%;
 }
+.choose-section .choose-box{
+  top: -14%;
+}
 
 /* Home-Our-Process */
 .process-new {
@@ -550,7 +553,7 @@ body{
 .process-new .long-line{
   position: relative;
   z-index: 1;
-  top: 385px;
+  top: 340px;
   border-bottom: 1px solid var(--e-global-color-very-light-gray);
 }
 .process-new .process-box {
@@ -579,10 +582,11 @@ body{
 .process-new .process-box hr {
   width: 50%;
   top: -5px;
-  left: -75px;
+  left: 0px;
   position: relative;
   margin-bottom: 16px;
   transition: all 0.3s ease-in-out;
+  opacity: 0.75;
 }
 .process-section .process-box:hover hr{
   border: 1px solid var(--e-global-color-white) !important;
@@ -646,6 +650,7 @@ body{
   margin: -35% 2% 10%;
 }
 .team-new .lower-portion hr{
+  opacity: 0.75;
   border: 1px solid #2EC761;
 }
 
@@ -689,7 +694,7 @@ body{
   background: var(--e-global-color-white);
   border-radius: 15px;
   padding: 15% 5% 8%;
-  box-shadow: 2px 12px 24px 6px rgb(128 128 128 / 25%);
+  box-shadow: 2px 12px 24px 6px rgba(128, 128, 128, 0.1);
 }
 .testimonial-new .testimonial-box::after {
   content: '';
@@ -886,19 +891,230 @@ body{
 
 /*  Home-Footer */
 .footer-new {
+  padding: 5% 2.5% 1%;
+  margin: 0%;
   background: url("/assets/images/footer-background.png") no-repeat center bottom/cover;
   background-color: #000b35;
   mix-blend-mode: multiply;
+}
+.footer-new .middle-portion {
+  margin-bottom: 3%;
+}
+.footer-new .middle-portion .footer-logo {
+  margin-bottom: 0%;
+}
+.footer-new .copyright{
+  padding: 2% 5%;
+}
+.footer-new .copyright p a{
+  text-decoration: none;
+}
+
+
+
+/* ============== ABOUT PAGE ================ */
+
+/* Sub-Banner */
+.aboutpage{
+  padding: 2.5% 2.5% 10%!important;
+  margin: 0%;
+  background: var(--e-global-color-white);
+}
+.aboutpage .about_content {
+  padding: 5% 2.5%;
+  text-align: start;
+}
+.aboutpage .about_content .content {
+  top: 0;
+  padding-top: 2%;
+}
+.aboutpage .about_content h6 {
+  background: url("/assets/images/title-style.png") no-repeat left top !important;
+}
+.aboutpage .about_content h6,
+.aboutpage .about_content .content h1,
+.aboutpage .about_content .content span {
+  font-weight: bolder;
+}
+.aboutpage .about_content .text {
+  font-family: "Montserrat", sans-serif;
+}
+.aboutpage .banner-backgroundimage{
+  position: relative;
+  top: 65% !important;
+  left: 2%;
+}
+.aboutpage .banner-backgroundimage img{
+  border-radius: 30px !important;
+}
+.aboutpage-banner {
+  padding: 15%;
+  background: url("/assets/images/subbanner-leftbottomlayer.png"), var(--e-global-color-light-grayish-cyan);
+  background-blend-mode: multiply;
+}
+
+/* Mission-Vission */
+.mission-vision{
+  padding: 5% 2.5%;
+  margin: 0%;
+  background: var(--e-global-color-white);
+}
+.mission-vision_content {
+  padding: 2.5%;
+  text-align: start;
+}
+.mission-vision_content .content {
+  top: 0;
+  padding-top: 2%;
+}
+.mission-vision_content .content h4,
+.mission-vision_content .content span {
+  font-weight: bolder;
+  color: #1273eb;
+}
+.mission-vision_content .text {
+  font-family: "Montserrat", sans-serif;
+}
+.mission-vision_content .content p {
+  font-weight: bolder;
+}
+.mission-vision ul li{
+  padding: 1% 0%;
+}
+.mission-vision ul li i {
+  background: rgba(208, 227, 251, 1);
+  border-radius: 100px;
+  height: 25px;
+  width: 25px;
+  line-height: 20px;
+  text-align: center;
+  margin-right: 2%;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.mission-vision ul li i:before {
+  font-size: 18px !important;
+}
+
+/* Why Choose Us */
+.why-choose{
+  padding:2.5%;
+  margin: 0%;
+  background: var(--e-global-color-very-dark-gray-mostly-white);
+}
+.why-choose .container-fluid{
+  border-radius: 25px;
+  background: var(--e-global-color-white);
+}
+.why-choose_content {
+  padding: 2.5%;
+  text-align: center;
+}
+.why-choose_content h1,
+.why-choose_content span {
+  font-weight: bolder;
+}
+.why-choose_content span {
+  color: #1273eb;
+}
+.why-choose_content .text {
+  font-family: "Montserrat", sans-serif;
+}
+.why-choose_content h2{
+  margin-bottom: 5%;
+  font-weight: 700;
+}
+.why-choose_content .content {
+  padding: 5% 2.5%;
+}
+.why-choose_content .content img {
+  border-radius: 25px;
+}
+.align-items-first-baseline{
+  display: flex;
+  align-items: first baseline;
+}
+.align-items-last-baseline{
+  display: flex;
+  align-items: last baseline;
+}
+.why-choose .choose-us{
+  display: flex;
+  justify-content: center;
+}
+.why-choose .choose-us .col-md-6,
+.why-choose .choose-us .col-lg-6,
+.why-choose .choose-us .col-sm-12,
+.why-choose .choose-us .col-12{
+  padding: 0;
+  margin: 0%;
+}
+.why-choose .choose-us,
+.why-choose .why-choose_content {
+  padding: 0% 1%;
+  margin: 0.5% 1%;
+}
+.why-choose .why-choose_content .content{
+  padding: 0% 5% !important;
+}
+
+/* Our Clients */
+.our-clients{
+  padding:2.5%;
+  margin: 0%;
+  background: var(--e-global-color-white);
+}
+.our-clients_content {
+  padding: 2.5%;
+  text-align: start;
+}
+.our-clients_content h1,
+.our-clients_content span {
+  font-weight: bolder;
+}
+.our-clients_content span {
+  color: #1273eb;
+}
+.our-clients_content .text {
+  font-family: "Montserrat", sans-serif;
 }
 
 
 
 
 
-
-
-
 /* ============== CONTCAT PAGE ================ */
+/* Contact About */
+.contactpage{
+  padding:2.5%;
+  margin: 0%;
+  background: transparent;
+}
+.contactpage .contact_content {
+  padding: 2.5%;
+  text-align: center;
+}
+.contactpage .contact_content h1,
+.contactpage .contact_content span {
+  font-weight: bolder;
+}
+.contactpage .contact_content span {
+  color: #1273eb;
+}
+.contactpage .contact_content h6 {
+  background: url("/assets/images/title-style.png") no-repeat center top !important;
+}
+.contactpage .contact_content .text {
+  font-family: "Montserrat", sans-serif;
+}
+.contactpage .contact_content p{
+  padding: 1% 15%;
+}
+.contactpage-section .container{
+  padding: 5% 2.5%;
+  border-radius: 25px;
+  background: var(--e-global-color-very-dark-gray-mostly-white);
+}
 .contact_map_section iframe {
   filter: grayscale(75%);
   -webkit-filter: grayscale(75%);
@@ -945,7 +1161,7 @@ body{
   .navbar-toggler {
     margin-left: auto;
     border: none !important;
-    padding: 0;
+    padding: 0% !important;
     width: 30px;
     height: 22px;
   }
@@ -959,6 +1175,9 @@ body{
   }
   .about-section .about_wrapper .about-image {
     position: relative;
+  }
+  .choose-section .choose-box {
+    top: 0% !important;
   }
   .service-new .service_contentbox .row > div {
 	  padding: 2%;
@@ -1042,7 +1261,18 @@ body{
 	  max-width: 100%;
 	  filter: none;
   }
-
+  .footer-section .middle-portion .footer-logo {
+    top: 0px;
+  }
+  .aboutpage {
+    padding: 2.5% 2.5% 15% !important;
+  }
+  .aboutpage .banner-backgroundimage {
+    left: 5%;
+  }
+  .why-choose .choose-us {
+    align-items: center;
+  }
 
 }
 @media only screen and (max-width: 767px) {
@@ -1057,7 +1287,7 @@ body{
     min-height: 200px;
   }
   .process-new .process-box hr {
-    left: -80px;
+    left: 0px;
   }
   .team-section .lower-portion hr {
     width: 50%;
@@ -1078,7 +1308,29 @@ body{
   .contactinfo-section .col-12 {
 	  left: 5%;
   }
-
+  .aboutpage .about_content {
+    padding: 1.5% 2.5% 1%;
+  }
+  .aboutpage {
+    padding: 2.5% 2.5% !important;
+  }
+  .aboutpage .banner-backgroundimage {
+    left: 0%;
+  }
+  .aboutpage-banner,
+  .mission-vision hr {
+    display: none;
+  }
+  .mission-vision_content {
+    padding: 1% 2.5%;
+  }
+  .why-choose .choose-us,
+  .why-choose .why-choose_content,
+  .why-choose .why-choose_content .content{
+    padding: 1%;
+    margin: 1%;
+    align-items: center;
+  }
 
 
   /* .footer-section .icon {
