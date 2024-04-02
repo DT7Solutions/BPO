@@ -6,6 +6,9 @@
 :root {
   --e-global-font-primary: "Raleway", sans-serif;
   --e-global-font-secondary: "Satoshi", sans-serif;
+ 
+  /* --e-global-font-primary: "Raleway" !important;
+  --e-global-font-secondary: "Satoshi" !important; */
   /* Define other CSS variables as before */
 }
 
@@ -138,9 +141,11 @@ body {
 }
 
 .navbar-nav .nav-item a {
+  font-family: var(--e-global-font-primary);
   font-size: 16px;
-  line-height: 20px;
   font-weight: 500;
+  line-height: 24px;
+  text-align: left;
 }
 
 .navbar-nav li,
@@ -170,9 +175,10 @@ body {
 .last_list .call_us {
   background: transparent;
   color: var(--e-global-color-white);
-  font-size: 14px;
-  line-height: 14px;
+  font-family: var(--e-global-font-secondary);
+  font-size: 16px;
   font-weight: 500;
+  line-height: 24px;
   border-radius: 5px;
   padding: 14px 10px;
   letter-spacing: 0px;
@@ -190,9 +196,10 @@ body {
   background: rgba(45, 199, 162, 1);
   color: var(--e-global-color-white);
   border: 2px solid rgba(45, 199, 162, 1);
-  font-size: 14px;
-  line-height: 14px;
+  font-family: var(--e-global-font-secondary);
+  font-size: 16px;
   font-weight: 500;
+  line-height: 24px;
   border-radius: 10px;
   padding: 14px 18px;
   margin-right: -4px;
@@ -344,7 +351,7 @@ body {
 
 .about-new .about_content h6 {
   background: url("/assets/images/title-style.png") no-repeat left top !important;
-  font-family: var(--e-global-font-primary);
+  font-family: var(--e-global-font-primary) !important;
   font-size: 16px;
   font-style: italic;
   font-weight: 700;
@@ -874,6 +881,11 @@ body {
 }
 
 .choose-section .choose-box .get_started {
+  font-family: var(--e-global-font-secondary);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;  
   padding: 18px 23px;
   background: rgba(45, 199, 162, 1);
 }
@@ -924,6 +936,14 @@ body {
 
 .process-new .process_content .text {
   font-family: "Montserrat", sans-serif;
+}
+
+.process-section .box-outer h4 {
+  font-family: var(--e-global-font-secondary);
+  font-size: 32px;
+  font-weight: 700;
+  /* line-height: 75px; */
+  text-align: center;  
 }
 
 .process-new .long-line {
@@ -1224,7 +1244,7 @@ body {
   font-family: var(--e-global-font-primary);
   font-size: 48px;
   font-weight: 700;
-  line-height: 57.6px;
+  line-height: 56px;
   text-align: left;  
 }
 
@@ -1321,7 +1341,7 @@ body {
 }
 
 .contact-new .contact_content .content span {
-  font-family: var(--e-global-font-secondary);
+  font-family: var(--e-global-font-secondary) !important;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -1329,7 +1349,7 @@ body {
 }
 
 .contact-section .contact_content .content a {
-  font-family: var(--e-global-font-secondary);
+  font-family: var(--e-global-font-secondary) !important;
   font-size: 18px;
   font-weight: 700;
   line-height: 27px;
@@ -1443,10 +1463,36 @@ body {
 }
 
 .footer-new .middle-portion {
-  margin-bottom: 3%;
+  margin: 0% 10% 3%;
+}
+
+.footer-section .middle-portion .links{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 0px;
+}
+.footer-section .middle-portion .links li{
+  display: inline-block;
+  margin: 0 5%;
+}
+.footer-section .middle-portion .links li:first-child{
+  margin-left: 0px;
+}
+.footer-section .middle-portion .links li:last-child{
+  margin-right: 0px;
+}
+
+.footer-section .middle-portion a {
+  font-family: var(--e-global-font-secondary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .footer-new .middle-portion .footer-logo {
+  position: relative;
+  top: -24px;
+  left: 28px;
   margin-bottom: 0%;
 }
 
@@ -1456,6 +1502,12 @@ body {
 
 .footer-new .copyright p a {
   text-decoration: none;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  
 }
 
 /* ============== ABOUT PAGE ================ */
@@ -1737,15 +1789,33 @@ body {
 
 .contactpage .contact_content h1,
 .contactpage .contact_content span {
+  font-family: var(--e-global-font-primary);
+  font-size: 48px;
   font-weight: 700;
+  line-height: 56px;
+  text-align: center;  
 }
 
-.contactpage .contact_content span,
+.contactpage .contact_content span{
+  color: #1273eb;
+}
+
 .contactpage .contact_content h2 {
+  font-family: var(--e-global-font-primary);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;  
   color: #1273eb;
 }
 
 .contactpage .contact_content h6 {
+  font-family: var(--e-global-font-primary);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;  
   background: url("/assets/images/title-style.png") no-repeat center top !important;
 }
 
@@ -1754,7 +1824,12 @@ body {
 }
 
 .contactpage .contact_content p {
-  padding: 1% 15%;
+  font-family: var(--e-global-font-secondary);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;  
+  padding: 1% 25%;
 }
 
 /* Contact Form */
@@ -1770,6 +1845,23 @@ body {
   background: var(--e-global-color-very-dark-gray-mostly-white);
 }
 
+.contactpage-section form label{
+  font-family: var(--e-global-font-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;  
+}
+
+.contactpage-section .contact_info input,
+.contactpage-section .contact_info textarea {
+  font-family: var(--e-global-font-secondary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;  
+}
+
 .contactpage-section .contact_info i {
   top: 40px;
   right: 40px;
@@ -1780,6 +1872,10 @@ body {
 }
 
 .contactpage-section .contact_info .send_now {
+  font-family: var(--e-global-font-secondary);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
   background: #000b35;
 }
 
@@ -1803,7 +1899,11 @@ body {
 }
 
 .contactinfo-new .contactinfo_content h1 {
+  font-family: var(--e-global-font-primary);
+  font-size: 48px;
   font-weight: 700;
+  line-height: 56px;
+  text-align: center;  
 }
 
 .contactinfo-new .contactinfo_content .text {
@@ -1823,11 +1923,13 @@ body {
 }
 
 .contactinfo-new .contactinfo-box h6 {
+  font-family: var(--e-global-font-primary);
   font-size: 24px;
-  font-weight: 800;
-  line-height: 30px;
-  letter-spacing: 1.2px;
-  word-spacing: 1.4px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  letter-spacing: 1px;
+  word-spacing: 1px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1848,7 +1950,11 @@ body {
 
 .contactinfo-new .contactinfo-box p,
 .contactinfo-new .contactinfo-box p a {
-  font-size: 20px;
+  font-family: var(--e-global-font-secondary);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: left;
   margin-right: 0px;
   transition: all 0.3s ease-in-out;
   color: #000;
@@ -1911,7 +2017,11 @@ body {
 }
 
 .faqpage .faq_content h1 {
+  font-family: var(--e-global-font-primary);
+  font-size: 48px;
   font-weight: 700;
+  line-height: 56px;
+  text-align: center;  
 }
 
 .faqpage .faq_content .text {
@@ -1919,7 +2029,12 @@ body {
 }
 
 .faqpage .faq_content p {
-  padding: 1% 15%;
+  font-family: var(--e-global-font-secondary);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;  
+  padding: 1% 25%;
 }
 
 /* Faq details */
@@ -1935,7 +2050,19 @@ body {
 }
 
 .faq-section .faq_content h4 {
+  font-family: var(--e-global-font-primary);
+  font-size: 18px;
   font-weight: 700;
+  line-height: 27px;
+  text-align: left;  
+}
+
+.faq-section .faq_content p{
+  font-family: var(--e-global-font-secondary);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;  
 }
 
 /* Faq Contact */
@@ -1951,7 +2078,11 @@ body {
 }
 
 .faqpage-contact .faq_content h1 {
+  font-family: var(--e-global-font-primary);
+  font-size: 32px;
   font-weight: 700;
+  line-height: 40px;
+  text-align: center;  
 }
 
 .faqpage-contact .faq_content .text {
@@ -1965,11 +2096,12 @@ body {
 .faqpage-contact .contact {
   background: rgba(45, 199, 162, 1);
   color: var(--e-global-color-white);
-  font-size: 18px;
-  line-height: 24px;
+  font-family: var(--e-global-font-secondary);
+  font-size: 16px;
   font-weight: 500;
+  line-height: 24px;
   border-radius: 10px;
-  padding: 22px 46px;
+  padding: 18px 23px;
   margin-right: -4px;
   text-align: center;
   display: inline-block;
@@ -2128,6 +2260,10 @@ body {
   z-index: 9999;
   background: var(--e-global-color-white) !important;
 }
+.service-tabs .nav-pills .nav-link, .nav-pills .show > .nav-link {
+  margin: 2.5% 1%;
+  padding: 2.5% 1%;
+}
 
 .service-tabs .service-images img {
   border-radius: 30px !important;
@@ -2143,7 +2279,7 @@ body {
   font-weight: 500;
   line-height: 24px;
   border-radius: 10px;
-  padding: 10px 15px;
+  padding: 18px 23px;
   margin-right: -4px;
   text-align: center;
   display: inline-block;
@@ -2423,11 +2559,11 @@ body {
   }
 
   .process-new .process-box {
-    min-height: 300px;
+    min-height: 375px;
   }
 
   .process-new .process-box hr {
-    left: -40px;
+    left: 0px;
   }
 
   .team-new .lower-portion .team-box {
@@ -2471,6 +2607,10 @@ body {
     font-size: 20px;
   }
 
+  .contactpage .contact_content p {
+    padding: 1% 15%;
+  }
+
   .contact-new .contact_box {
     display: flex;
     margin: 5% !important;
@@ -2487,8 +2627,13 @@ body {
     filter: none;
   }
 
+  .footer-new .middle-portion {
+    margin: 0% 0% 3%;
+  }
+
   .footer-section .middle-portion .footer-logo {
-    top: 0px;
+    top: -15px;
+    left: 10px;
   }
 
   .aboutpage {
@@ -2619,6 +2764,10 @@ body {
     font-size: 18px;
   }
 
+  .contactpage .contact_content p {
+    padding: 1% 5%;
+  }
+
   .contact-new .contact_box {
     margin: 5% 0% !important;
   }
@@ -2683,39 +2832,13 @@ body {
     padding: 0.5% 1%;
   }
 
-  /* .footer-section .icon {
-	  margin-top: 5%;
-  }
-  .footer-section .middle-portion input {
-    padding: 5% !important;
-    height: 35px !important;
-    width: 95%;
-    margin: 5%;
-  } 
-  .footer-section .subscribe_now {
-    font-size: 16px !important;
-    line-height: 16px !important;
-    right: 1% !important;
-    top: 25%;
-    width: 30% !important;
-    height: 50% !important;
+  .footer-section .middle-portion .row>* {
+    padding: 1%;
+  }  
+
+  .footer-section .middle-portion .links li{
+    margin-left: -0.25% !important;
   }
 
-  .footer-new .middle-portion >.row{
-    display: flex;
-  }
-  .footer-new .middle-portion .links {
-    text-align: start;
-  }
-  .footer-new .middle-portion .links2 {
-    text-align: end;
-  }
-  .footer-section .middle-portion .links li,
-  .footer-section .middle-portion .links2 li {
-    margin: 0% 0.75%;
-  }
-  .footer-section .middle-portion a {
-    font-size: 12px;
-    font-weight: 300;
-  }   */
+
 }
