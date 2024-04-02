@@ -1619,8 +1619,12 @@ body {
 }
 
 .why-choose_content h2 {
-  margin-bottom: 5%;
+  font-family: var(--e-global-font-primary);
+  font-size: 40px;
   font-weight: 700;
+  line-height: 52px;
+  text-align: left;  
+  margin-bottom: 5%;
 }
 
 .why-choose_content .content {
@@ -1654,6 +1658,15 @@ body {
   margin: 0%;
 }
 
+.why-choose .choose-us:first-child{
+  padding-top: 5% !important;
+}
+
+.why-choose .choose-us:last-child{
+  padding-bottom: 5% !important;
+}
+
+
 .why-choose .choose-us,
 .why-choose .why-choose_content {
   padding: 0% 1%;
@@ -1662,6 +1675,14 @@ body {
 
 .why-choose .why-choose_content .content {
   padding: 0% 5% !important;
+}
+
+.why-choose .why-choose_content .content p{
+  font-family: var(--e-global-font-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;  
 }
 
 /* Our Clients */
@@ -1678,11 +1699,23 @@ body {
 
 .our-clients_content h1,
 .our-clients_content span {
+  font-family: var(--e-global-font-primary);
+  font-size: 48px;
   font-weight: 700;
+  line-height: 56px;
+  text-align: left;  
 }
 
 .our-clients_content span {
   color: #1273eb;
+}
+
+.our-clients_content p{
+  font-family: var(--e-global-font-secondary);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;  
 }
 
 .our-clients_content .text {
@@ -1950,7 +1983,7 @@ body {
 /* ============== SERVICE PAGE ================ */
 /* Service About */
 .servicepage {
-  padding: 5% 2.5% !important;
+  padding: 5% 2.5% 10% !important;
   margin: 0%;
   background: var(--e-global-color-white);
 }
@@ -1972,7 +2005,11 @@ body {
 
 .servicepage .service_content .content h1,
 .servicepage .servicet_content .content span {
+  font-family: var(--e-global-font-primary);
+  font-size: 56px;
   font-weight: 700;
+  line-height: 66px;
+  text-align: left;  
   color: #1273eb;
 }
 
@@ -1994,6 +2031,14 @@ body {
   padding-top: 50%;
 }
 
+.servicepage .service_content .content .content-margin p{
+  font-family: var(--e-global-font-secondary);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;  
+}
+
 /* Services Benifits */
 .servicepage-benifits {
   padding: 2.5% !important;
@@ -2011,14 +2056,35 @@ body {
   padding-top: 2%;
 }
 
+.servicepage-benifits .service_content .content p{
+  font-family: var(--e-global-font-secondary);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;  
+}
+
+
 .servicepage-benifits .service_content h6 {
   background: url("/assets/images/title-style.png") no-repeat left top !important;
 }
 
-.servicepage-benifits .service_content h6,
+.servicepage-benifits .service_content h6{
+  font-family: var(--e-global-font-primary);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: start;  
+}
+
 .servicepage-benifits .service_content .content h1,
 .servicepage-benifits .service_content .content span {
+  font-family: var(--e-global-font-primary);
+  font-size: 48px;
   font-weight: 700;
+  line-height: 56px;
+  text-align: left;  
 }
 
 .servicepage-benifits .service_content .content h1 span {
@@ -2033,17 +2099,28 @@ body {
 .service-tabs {
   background: url("/assets/images/service-backlayer.png") var(--e-global-color-light-grayish-cyan);
   background-blend-mode: multiply;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2% 0% 0%;
+  margin: 0%;
+}
+
+.service-tabs .nav {
+  padding: 5% 2.5%;
+  margin: 1%;
 }
 
 .service-tabs button {
+  font-family: var(--e-global-font-primary);
   font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
   color: var(--e-global-color-black) !important;
-  text-align: start !important;
-  font-weight: 500;
 }
 
 .service-tabs button i {
-  margin-right: 5%;
+  margin-right: 2.5%;
 }
 
 .service-tabs .nav-pills .nav-link.active,
@@ -2054,16 +2131,19 @@ body {
 
 .service-tabs .service-images img {
   border-radius: 30px !important;
+  height: 520px !important;
+  max-height: 520px;
 }
 
 .service-tabs .contact {
   background: rgba(45, 199, 162, 1);
   color: var(--e-global-color-white);
-  font-size: 18px;
-  line-height: 24px;
+  font-family: var(--e-global-font-secondary);
+  font-size: 16px;
   font-weight: 500;
+  line-height: 24px;
   border-radius: 10px;
-  padding: 12px 20px;
+  padding: 10px 15px;
   margin-right: -4px;
   text-align: center;
   display: inline-block;
@@ -2075,24 +2155,30 @@ body {
 }
 
 .service-tabs .service_content h2 {
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 30px;
-  letter-spacing: 1.2px;
-  word-spacing: 1.4px;
+  font-family: var(--e-global-font-primary);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: left;  
+  letter-spacing: 1px;
+  word-spacing: 1px;
   transition: all 0.3s ease-in-out;
 }
 
 .service-tabs .service_content p {
+  font-family: var(--e-global-font-secondary);
   font-size: 16px;
-  line-height: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
   transition: all 0.3s ease-in-out;
 }
 
 .service-tabs .tab-content>.active {
   display: flex;
   align-items: center;
-  padding: 5% 2.5% 2.5%;
+  padding: 0%;
+  margin: 0% -5%;
 }
 
 /* Services Works */
@@ -2107,14 +2193,23 @@ body {
   text-align: center;
 }
 
-.service-works .work_content h6,
-.service-works .work_content h1,
-.service-works .work_content span {
+.service-works .work_content h6 {
+  font-family: var(--e-global-font-primary);
+  font-size: 16px;
+  font-style: italic;
   font-weight: 700;
+  line-height: 24px;
+  text-align: center;  
+  background: url("/assets/images/title-style.png") no-repeat center top !important;
 }
 
-.service-works .work_content h6 {
-  background: url("/assets/images/title-style.png") no-repeat center top !important;
+.service-works .work_content h1,
+.service-works .work_content span {
+  font-family: var(--e-global-font-primary);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: center;  
 }
 
 .service-works .work_content .text {
@@ -2122,13 +2217,18 @@ body {
 }
 
 .service-works .work_content p {
-  padding: 1% 15%;
+  font-family: var(--e-global-font-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;  
+  padding: 1% 30%;
 }
 
 .timeline {
   position: relative;
   padding: 20px 0;
-  max-width: 800px;
+  max-width: 700px;
 }
 
 .timeline-item {
@@ -2151,17 +2251,30 @@ body {
 }
 
 .timeline-content h6 {
-  color: #1273eb;
-  font-weight: bold;
+  font-family: var(--e-global-font-primary);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: rgba(18, 115, 235, 1);
 }
 
 .timeline-content h2 {
+  font-family: var(--e-global-font-primary);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: left;
   margin-top: 5px;
   margin-bottom: 15px;
-  font-weight: bold;
 }
 
 .timeline-content p {
+  font-family: var(--e-global-font-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;  
   margin-bottom: 0;
 }
 
@@ -2170,7 +2283,7 @@ body {
   position: absolute;
   width: 2px;
   height: 62.5%;
-  background-color: #1273eb;
+  background-color: rgba(18, 115, 235, 1);
   top: 5%;
   left: 1%;
 }
@@ -2318,8 +2431,8 @@ body {
   }
 
   .team-new .lower-portion .team-box {
-    padding: 25% 5% 5%;
-    margin: -25% 5% 15%;
+    padding: 25% 0% 5%;
+    margin: -25% 0% 15%;
   }
 
   .team-section .lower-portion hr {
@@ -2386,8 +2499,13 @@ body {
     max-height: 380px;
   }
 
+  .aboutpage-banner {
+    padding: 20%;
+  }
+
   .aboutpage .banner-backgroundimage {
     left: 5%;
+    top: 75% !important;
   }
 
   .why-choose .choose-us {
@@ -2423,10 +2541,23 @@ body {
     margin-left: 0%;
   }
 
+  .servicepage .service_content .content .content-margin {
+    padding-top: 0%;
+  }
+
+  .service-works .work_content p {
+    padding: 1% 10%;
+  }
+
+  .service-tabs .nav {
+    padding: 0%;
+    margin: 0%;
+  }
+
   .service-tabs .nav-pills .nav-link,
   .nav-pills .show>.nav-link {
-    margin: 5% 1%;
-    padding: 2%;
+    margin: 5% -1%;
+    padding: 5% 1%;
   }
 
   .service-tabs .tab-content>.active {
@@ -2436,8 +2567,15 @@ body {
     flex-direction: column;
   }
 
+  .service-tabs .service-images img {
+    border-radius: 30px !important;
+    height: auto !important;
+    max-height: 320px;
+  }
+
   .timeline-item:last-child .timeline-content::before {
     left: 2%;
+    height: 55.5%;
   }
 
   .faq-new .accordion-button,
@@ -2518,6 +2656,10 @@ body {
     align-items: center;
   }
 
+  .our-clients_content {
+    padding: 0%;
+  }
+
   .contactinfo-new .col-12 {
     left: 0;
   }
@@ -2528,6 +2670,17 @@ body {
 
   .timeline-item:last-child .timeline-content::before {
     left: 2.5%;
+  }
+
+  .service-tabs .nav {
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .service-tabs .nav-pills .nav-link,
+  .nav-pills .show>.nav-link {
+    margin: 0.5% -1%;
+    padding: 0.5% 1%;
   }
 
   /* .footer-section .icon {
