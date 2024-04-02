@@ -1,0 +1,28 @@
+.service-section .service_contentbox .service-box figure {
+    width:50px!important;
+    height:50px!important;
+}
+/* .process-section .box-outer .line {
+    position: absolute;
+    right: 50%!important;
+    top: 40px;
+    border-right: 2px solid var(--e-global-color-very-light-gray);
+    height: 190px;
+} */
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.rounded-3 {
+    border-radius: .475rem !important;
+}
+.faq-new .accordion-button:not(.collapsed), .faq-new .accordion-body {
+    background-color: #fff!important;
+}
+
+.accordion-flush>.accordion-item {
+    border-radius: 30px!important;
+}
+.accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed {
+    border-radius: 30px!important;
+}
