@@ -25,4 +25,5 @@
 }
 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed {
     border-radius: 30px!important;
+    border-color: none!important;
 }
