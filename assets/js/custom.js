@@ -36,4 +36,66 @@ window.addEventListener('scroll', function() {
     } else {
       toTopButton.classList.remove('show');
     }
-  });
+});
+
+
+// Email JS Contact Form 
+function Send() {
+  if (document.getElementById("name").value == "") {
+      alert("Please enter your name");
+      document.getElementById("name").focus();
+      return false;
+  }
+  if (document.getElementById("phone").value == "") {
+      alert("Please enter your phone number");
+      document.getElementById("phone").focus();
+      return false;
+  }
+  if (document.getElementById("email").value == "") {
+      alert("Please enter your email address");
+      document.getElementById("email").focus();
+      return false;
+  }
+  if (document.getElementById("subject").value == "") {
+      alert("Please enter the subject");
+      document.getElementById("subject").focus();
+      return false;
+  }
+  if (document.getElementById("message").value == "") {
+      alert("Please enter your message");
+      document.getElementById("message").focus();
+      return false;
+  }
+  var params = {
+      name: document.getElementById("name").value,
+      phone: document.getElementById("phone").value,
+      email: document.getElementById("email").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value
+  };
+  const serviceID = "service_tnxor7l";
+  const templateID = "template_aidf1vd";
+  // emailjs.send("Service_ID", "Template_ID", formData)
+  emailjs.send(serviceID, templateID, params)
+      .then(function(response) {
+          console.log('Email sent successfully:', response.status, response.text);
+          alert("Thank you, " + name + "! Your message has been sent successfully.");
+          console.log(JSON.stringify(params, null, 2));
+          document.getElementById("contactpage").reset();
+      }, function(error) {
+          console.error("Email sending failed:", error);
+          alert("Sorry ...!, " + name + ". Oops! Something went wrong. Please try again later.");
+      });
+  return false;
+  /* 
+  // Email js Template Form Design Code
+    <p>&nbsp;</p>
+    <p>You got a new message from {{name}}:</p>
+    <p>Phonenumber : {{phone}}</p>
+    <p>Email &nbsp; : {{email}}</p>
+    <p>subject&nbsp; : {{subject}}</p>
+    <p>Message &nbsp; : </p>
+    <p style="padding: 12px;font-style: italic;">{{message}}</p>
+    <p>&nbsp;</p>
+  */
+}
