@@ -314,7 +314,7 @@ body {
 .about-new {
   background: var(--e-global-color-white);
   padding: 5% 2.5%;
-  margin: 2.5% !important;
+  margin: 0% !important;
   z-index: -99;
 }
 
@@ -976,8 +976,12 @@ body {
 .process-new .long-line {
   position: relative;
   z-index: 1;
-  top: 355px;
+  top: 365px;
   border-bottom: 1px solid var(--e-global-color-very-light-gray);
+}
+
+.process-section .box-outer .line {
+  right: 50%;
 }
 
 .process-new .process-box {
@@ -2474,34 +2478,40 @@ body {
 
 @media only screen and (min-width: 1440px) and (max-width: 1920px) {
   .about-new {
-    margin: 10% 5% 5%;
+    margin: 10% 2.5% 0% !important;
   }
 
   .pagination-outer .carousel-control-prev,
   .pagination-outer .carousel-control-next {
-    top: 125px;
+    top: 125px !important;
   }
 
+  .about-new .about_content h6{
+    margin-left: -15%;
+  }
   .about-new .about_content .content {
-    right: 15%;
-  }
-
-  .choose-new .container{
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    right: 15% !important;
   }
 
   .testimonial-section .image figure {
-    left: 40%;
+    left: 40% !important;
   }
 
   .testimonial-section .owl-carousel .owl-nav button.owl-prev {
-    left: 0%;
+    left: -2.5% !important;
   }
 
   .testimonial-section .owl-carousel .owl-nav button.owl-next {
-    right: 0%;
+    right: -2.5% !important;
+  }
+
+  .testimonial-section .testimonial_wrapper::after {
+    content: "";
+    width: 100%;
+    border: 1px dashed var(--e-global-color-accent);
+    position: absolute;
+    top: 42px;
+    left: 0%;
   }
 
   .testimonial-new .testimonial-backgroundlayer img {
@@ -2513,36 +2523,40 @@ body {
   }
 
   .process-new .long-line {
-    top: 370px;
-  }
-
-  .team-new .lower-portion .team-box {
-    padding: 50% 2% 5%;
-    margin: -45% 2% 10%;
+    top: 390px;
   }
 
   .team-section .lower-portion hr {
-    margin: 0 30%;
+    margin: 0 30% !important;
+  }
+
+  .choose-section {
+    margin: 2.5% 0% !important;
   }
 
   .choose-section:before {
-    height: 100%;
+    height: 100% !important;
   }
 
   .choose-section .choose-image {
-    top: 5%;
+    top: 5% !important;
   }
 
   .choose-section .choose-box {
-    left: 5%;
-    top: -5%;
+    left: 5% !important;
+    top: -5% !important;
+    scale: 1.25;
+  }
+
+  .choose-section .choose-box ul li .circle:before {
+    left: 30px;
   }
 
   .service-tabs .service-images img {
     height: 720px !important;
     max-height: 720px;
   }
-  
+
 }
 @media only screen and (max-width: 991px) {
   .navbar-nav .nav-item a,
