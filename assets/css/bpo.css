@@ -676,7 +676,7 @@ body {
 /* Home-review */
 .review-new {
   background: var(--e-global-color-white);
-  padding: 5% 2.5%;
+  padding: 2.5%;
   margin: 0%;
 }
 
@@ -746,7 +746,7 @@ body {
   border-radius: 25px;
   position: relative;
   z-index: 1;
-  right: -60%;
+  right: -70%;
   top: 15%;
 }
 
@@ -1067,12 +1067,12 @@ body {
 
 /* Home-Our-Team */
 .team-new {
-  padding: 5% 2.5%;
+  padding: 2.5%;
   margin: 0%;
 }
 
 .team-new .team_content {
-  padding: 5% 2.5%;
+  padding: 2.5%;
   text-align: center;
 }
 
@@ -1134,7 +1134,7 @@ body {
 
 /* Home-Testimonial */
 .testimonial-new {
-  padding: 5% 2.5%;
+  padding: 2.5%;
   margin: 0%;
 }
 
@@ -1253,7 +1253,7 @@ body {
 
 /*  Home-FAQ's */
 .faq-new {
-  padding: 5% 2.5%;
+  padding: 2.5% !important;
   margin: 0%;
 }
 
@@ -1343,7 +1343,7 @@ body {
 
 /* Home-Contact */
 .contact-new {
-  padding: 5% 2.5%;
+  padding: 2.5%;
   margin: 0%;
   background: url("/assets/images/contact-background.png")
     var(--e-global-color-light-grayish-cyan) no-repeat;
@@ -1419,8 +1419,9 @@ body {
   text-align: left;
   color: var(--e-global-color-very-dark-gray);
   background-color: var(--e-global-color-white);
-  border: 1px solid var(--e-global-color-light-gray);
-  border-radius: 8px;
+  border: none;
+  border-bottom: 1px solid var(--e-global-color-light-gray);
+  border-radius: 0;
   padding: 2% 1.5% 2% 2.5%;
   /* padding: 21px 20px 21px 26px; */
   margin-bottom: 15px;
@@ -1772,6 +1773,7 @@ body {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  width: 90%;
 }
 
 /* Our Clients */
@@ -2193,9 +2195,10 @@ body {
 }
 
 .servicepage .banner-backgroundimage {
-  position: relative;
+  position: absolute;
   top: 0% !important;
-  left: 0%;
+  left: 0% !important;
+  right: 0% !important;
 }
 
 .servicepage .banner-backgroundimage img {
@@ -2290,7 +2293,8 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
-  text-align: left;
+  text-align: justify;
+  padding-left: 7.5% !important;
   color: var(--e-global-color-black) !important;
 }
 
@@ -2303,6 +2307,7 @@ body {
   z-index: 9999;
   background: var(--e-global-color-white) !important;
 }
+
 .service-tabs .nav-pills .nav-link,
 .nav-pills .show > .nav-link {
   margin: 2.5% 1%;
@@ -2481,6 +2486,19 @@ body {
     padding: 15% 5%;
     margin: 5% 0% 0%;
   }
+
+  .aboutpage-banner {
+    padding: 10%;
+  }
+
+  .aboutpage .about_content .content {
+    right: 1%;
+  }
+
+  .why-choose .why-choose_content .content p {
+    width: 75%;
+  }
+
   .about-new {
     margin: 10% 2.5% 0% !important;
   }
@@ -2556,9 +2574,35 @@ body {
     left: 30px;
   }
 
+  .servicepage {
+    padding: 5% 2.5% !important;
+  }
+
+  .servicepage .service_content .content .content-margin {
+    padding-top: 30%;
+  }
+
+  .servicepage .service_content .content .content-margin p {
+    text-align: justify;
+    width: 80%;
+  }
+
   .service-tabs .service-images img {
     height: 720px !important;
     max-height: 720px;
+  }
+
+  .servicepage .banner-backgroundimage {
+    position: absolute;
+    top: 0% !important;
+    left: 12.5% !important;
+    right: 12.5% !important;
+  }
+
+  .service-tabs .nav-pills .nav-link,
+  .nav-pills .show > .nav-link {
+    margin: 2.5% 12.5%;
+    padding: 2.5% 10%;
   }
 
 }
@@ -2676,6 +2720,7 @@ body {
 
   .review-section .review_wrapper {
     top: 0%;
+    left: -60%;
   }
 
   .choose-section .choose-box {
@@ -2692,6 +2737,10 @@ body {
   .process-new {
     padding: 10% 2.5%;
     margin: 0%;
+  }
+
+  .process-section .long-line {
+    top: 305px;
   }
 
   .process-new .process-box {
@@ -2787,6 +2836,10 @@ body {
   .aboutpage .banner-backgroundimage {
     left: 5%;
     top: 75% !important;
+  }
+
+  .why-choose .why-choose_content .content p {
+    width: 100%;
   }
 
   .why-choose .choose-us {
