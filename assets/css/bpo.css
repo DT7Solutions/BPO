@@ -766,7 +766,7 @@ body {
 
 .review-section .review_wrapper .rating1 figure img {
   border-radius: 100px;
-  border: 1px solid var(--e-global-color-accent);
+  border: 0px;
   padding: 6px;
 }
 
