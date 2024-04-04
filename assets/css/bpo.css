@@ -314,6 +314,7 @@ body {
 .about-new {
   background: var(--e-global-color-white);
   padding: 5% 2.5%;
+  margin: 2.5% !important;
   z-index: -99;
 }
 
@@ -326,6 +327,7 @@ body {
 .about-new .about_content .content {
   top: 0;
   padding-top: 2%;
+  right: 2.5% !important;
 }
 
 .about-section .about-image-one {
@@ -870,7 +872,7 @@ body {
 
 .choose-section:before {
   width: 85%;
-  height: 730px;
+  height: 730px !important;
   background-size: cover;
   background-position: bottom;
   border-radius: 0 80px 0 0;
@@ -878,7 +880,7 @@ body {
 
 .choose-section .choose-box {
   left: 175px;
-  top: -56px;
+  top: -14% !important;
   padding: 25px;
   width: 70%;
 }
@@ -919,13 +921,10 @@ body {
 }
 
 .choose-section .choose-image {
-  top: 12%;
+  top: 12% !important;
   right: 0%;
 }
 
-.choose-section .choose-box {
-  top: -14%;
-}
 
 /* Home-Our-Process */
 .process-new {
@@ -2465,9 +2464,15 @@ body {
   left: 1%;
 }
 
+.pagination-outer .carousel-control-prev,
+.pagination-outer .carousel-control-next {
+  color: #000 !important;
+  top: 110px !important;
+}
+
 /* ============== RESPONSIVE FOR ALL PAGES ================ */
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 992px) and (max-width: 1920px) {
   .about-new {
     margin: 10% 5% 5%;
   }
