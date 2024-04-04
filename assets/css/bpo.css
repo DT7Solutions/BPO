@@ -2472,56 +2472,77 @@ body {
 
 /* ============== RESPONSIVE FOR ALL PAGES ================ */
 
-@media only screen and (min-width: 992px) and (max-width: 1920px) {
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
   .about-new {
     margin: 10% 5% 5%;
   }
+
   .pagination-outer .carousel-control-prev,
   .pagination-outer .carousel-control-next {
     top: 125px;
   }
+
   .about-new .about_content .content {
     right: 15%;
   }
+
+  .choose-new .container{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .testimonial-section .image figure {
     left: 40%;
   }
+
   .testimonial-section .owl-carousel .owl-nav button.owl-prev {
     left: 0%;
   }
+
   .testimonial-section .owl-carousel .owl-nav button.owl-next {
     right: 0%;
   }
+
   .testimonial-new .testimonial-backgroundlayer img {
     width: 1920px;
   }
+
   .process-section .box-outer .line {
     right: 50%;
   }
+
   .process-new .long-line {
     top: 370px;
   }
+
   .team-new .lower-portion .team-box {
     padding: 50% 2% 5%;
     margin: -45% 2% 10%;
   }
+
   .team-section .lower-portion hr {
     margin: 0 30%;
   }
+
   .choose-section:before {
     height: 100%;
   }
+
   .choose-section .choose-image {
     top: 5%;
   }
+
   .choose-section .choose-box {
     left: 5%;
     top: -5%;
   }
+
   .service-tabs .service-images img {
     height: 720px !important;
     max-height: 720px;
   }
+  
 }
 @media only screen and (max-width: 991px) {
   .navbar-nav .nav-item a,
