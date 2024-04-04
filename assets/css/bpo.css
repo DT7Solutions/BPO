@@ -2477,6 +2477,10 @@ body {
 /* ============== RESPONSIVE FOR ALL PAGES ================ */
 
 @media only screen and (min-width: 1440px) and (max-width: 1920px) {
+  .banner-section .banner_content {
+    padding: 15% 5%;
+    margin: 5% 0% 0%;
+  }
   .about-new {
     margin: 10% 2.5% 0% !important;
   }
