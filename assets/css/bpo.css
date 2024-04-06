@@ -379,7 +379,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
-  text-align: left;
+  text-align: justify;
 }
 .about-new .about_content .text {
   font-family: var(--e-global-font-primary);
@@ -493,7 +493,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
-  text-align: left;
+  text-align: justify;
 }
 
 .service-new .service_content .text {
@@ -587,7 +587,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
+  text-align: justify;
 }
 
 .service-section .service-box:hover h5,
@@ -903,7 +903,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
+  text-align: justify;
 }
 
 .choose-section .choose-box .text {
@@ -911,7 +911,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
-  text-align: left;
+  text-align: justify;
 }
 
 .choose-section .choose-box .get_started {
@@ -1252,7 +1252,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
-  text-align: left;
+  text-align: justify;
 }
 
 /*  Home-FAQ's */
