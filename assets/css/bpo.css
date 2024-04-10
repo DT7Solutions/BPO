@@ -251,6 +251,8 @@ body {
 /* Slider */
 .banner-section .banner_content {
   border-radius: 0 10% 5% 0;
+  padding: 2.5% 5% 20%;
+  margin: 0% 0% 2.5%;
 }
 
 .banner-section .banner_content .carousel{
@@ -298,6 +300,7 @@ body {
   line-height: 24px;
   font-family: var(--e-global-font-secondary);
   font-weight: 400;
+  margin-bottom: 2.5% !important;
 }
 
 .pagination-outer .carousel-control-prev,
@@ -1415,7 +1418,8 @@ body {
   font-weight: 500;
 }
 
-.contact-new .contact_box input {
+.contact-new .contact_box input,
+.contact-new .contact_box select {
   font-family: var(--e-global-font-secondary);
   font-size: 16px;
   font-weight: 400;
@@ -1570,6 +1574,7 @@ body {
 .aboutpage .about_content .content {
   top: 0;
   padding-top: 2%;
+  padding-bottom: 2.5%;
 }
 
 .aboutpage .about_content h6 {
@@ -1882,7 +1887,8 @@ body {
 }
 
 .contactpage-section .container {
-  max-width: 1020px;
+  max-width: 720px;
+  /* max-width: 1020px; */
   padding: 2.5% 2.5% 5%;
   border-radius: 25px;
   background: var(--e-global-color-very-dark-gray-mostly-white);
@@ -1897,12 +1903,26 @@ body {
 }
 
 .contactpage-section .contact_info input,
+.contactpage-section .contact_info select,
 .contactpage-section .contact_info textarea {
   font-family: var(--e-global-font-secondary);
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   text-align: left;
+}
+
+.contactpage-section .contact_info select{
+  color: var(--e-global-color-dark-grayish-blue);
+  background-color: var(--e-global-color-white);
+  border: 1px solid var(--e-global-color-very-light-gray);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  overflow: visible;
+  outline: none;
+  -webkit-padding-end: 50px;
 }
 
 .contactpage-section .contact_info i {
@@ -2651,7 +2671,7 @@ body {
   }
 
   .banner-section .banner_content .carousel{
-    max-width: 550px;
+    max-width: 525px;
     min-width: 350px !important;
   }
 
