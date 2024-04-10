@@ -534,7 +534,7 @@ body {
   transition: all 0.3s ease-in-out;
   box-shadow: 1px 21px 46px rgb(146 146 146 / 10%);
   width: 100%;
-  min-height: 325px;
+  min-height: 300px;
 }
 
 .service-new .service_contentbox .row > div {
@@ -2626,7 +2626,7 @@ body {
 
   .service-tabs .nav-pills .nav-link,
   .nav-pills .show > .nav-link {
-    margin: 2.5% 12.5%;
+    margin: 2.5% 8.5%;
     padding: 2.5% 10%;
   }
 
