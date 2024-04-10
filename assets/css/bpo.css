@@ -293,6 +293,7 @@ body {
 
 .banner-section .pagination-outer {
   bottom: 10px;
+  right: 2.5%;
 }
 
 .banner-section .banner_content p {
@@ -2756,8 +2757,13 @@ body {
   .choose-section .choose-box {
     left: 0;
     top: 5% !important;
-    padding: 0px;
+    padding: 2.5%;
     width: 100%;
+  }
+
+  .choose-section .choose-box ul li .circle:before {
+    left: 4%; 
+    margin-top: -1%;
   }
 
   .choose-section .choose-box ul li .circle {
@@ -3082,5 +3088,8 @@ body {
   }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 430px) {
+  .banner-section .banner_content {
+    padding: 2.5% 5% 30%;
+  }
 }
