@@ -251,8 +251,9 @@ body {
 /* Slider */
 .banner-section .banner_content {
   border-radius: 0 10% 5% 0;
-  padding: 2.5% 5% 20%;
+  padding: 2.5% 5% 10%;
   margin: 0% 0% 2.5%;
+  top: 15%;
 }
 
 .banner-section .banner_content .carousel{
@@ -270,8 +271,9 @@ body {
 
 .banner-section .banner_content h1,
 .banner-section .banner_content span {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700 !important;
+  padding: 1%;
 }
 
 .banner-section .banner_content .read_more {
