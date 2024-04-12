@@ -1003,7 +1003,7 @@ body {
   box-shadow: 1px 21px 46px rgb(146 146 146 / 10%);
   position: relative;
   z-index: 1;
-  min-height: 225px;
+  min-height: 275px;
   text-align: start;
 }
 
@@ -1041,7 +1041,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
+  text-align: justify;
   margin-right: 0px;
   transition: all 0.3s ease-in-out;
 }
