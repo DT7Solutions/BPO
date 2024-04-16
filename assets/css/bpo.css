@@ -2187,7 +2187,7 @@ body {
 /* ============== SERVICE PAGE ================ */
 /* Service About */
 .servicepage {
-  padding: 5% 2.5% 10% !important;
+  padding: 5% 2.5% 5% !important;
   margin: 0%;
   background: var(--e-global-color-white);
 }
@@ -2233,7 +2233,7 @@ body {
 }
 
 .servicepage .service_content .content .content-margin {
-  padding-top: 50%;
+  padding-top: 30%;
 }
 
 .servicepage .service_content .content .content-margin p {
@@ -2494,10 +2494,10 @@ body {
   content: "";
   position: absolute;
   width: 2px;
-  height: 62.5%;
+  height: 60%;
   background-color: rgba(18, 115, 235, 1);
   top: 5%;
-  left: 1%;
+  left: 1.5%;
 }
 
 .pagination-outer .carousel-control-prev,
