@@ -221,7 +221,7 @@ body {
   display: block;
   position: fixed;
   bottom: 2.5%;
-  right: 2.5%;
+  left: 2.5%;
   background: rgba(45, 199, 162, 1);
   color: #d5eff4;
   width: 50px;
@@ -244,6 +244,31 @@ body {
 .toplink i {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.contact-us .float{
+  position: fixed;
+  min-height: 64px !important;
+  min-width: 67px !important;
+  max-height: 64px !important;
+  max-width: 67px !important;
+  bottom: 12.5%;
+  right: 1.5%;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.contact-us .float i{
+  scale: 1.25;
+  margin: 15px 5px 5px 5px;
+}
+.tawk-min-container .tawk-button-circle.tawk-button-large {
+  width: 60px !important;
+  height: 60px !important;
 }
 
 /* =============== HOME PAGE ==================*/
@@ -2241,7 +2266,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
-  text-align: left;
+  text-align: justify;
 }
 
 /* Services Benifits */
@@ -2266,7 +2291,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
-  text-align: left;
+  text-align: justify;
 }
 
 .servicepage-benifits .service_content h6 {
@@ -2509,9 +2534,18 @@ body {
 /* ============== RESPONSIVE FOR ALL PAGES ================ */
 
 @media only screen and (min-width: 1440px) and (max-width: 1920px) {
+  .contact-us .float{
+    bottom: 12.5%;
+    right: 1.5%;
+  }
+
   .banner-section .banner_content {
-    padding: 15% 5%;
+    padding: 10% 5%;
     margin: 5% 0% 0%;
+  }
+
+  .banner-section .banner_content .content {
+    padding: 5% 7.5%;
   }
 
   .aboutpage-banner {
@@ -2634,6 +2668,11 @@ body {
 
 }
 @media only screen and (max-width: 991px) {
+  .contact-us .float{
+    bottom: 8.5%;
+    right: 3.5%;
+  }
+
   .navbar-nav .nav-item a,
   .navbar-collapse .get_started {
     padding: 12px 30px !important;
@@ -2692,6 +2731,9 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .about-new{
+    z-index: 99;
+  }
   .about-new .row {
     display: flex;
     align-items: center;
@@ -2961,6 +3003,10 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  .contact-us .float{
+    bottom: 12.5%;
+    right: 1.5%;
+  }
   .sub-banner .banner-section .banner_content .box {
     right: 40px !important;
   }
@@ -3032,6 +3078,10 @@ body {
     padding: 1% 2.5%;
   }
 
+  .mission-vision_content .content p {
+    text-align: justify;
+  }
+
   .why-choose .choose-us,
   .why-choose .why-choose_content,
   .why-choose .why-choose_content .content {
@@ -3040,8 +3090,16 @@ body {
     align-items: center;
   }
 
+  .why-choose .why-choose_content .content p {
+    text-align: justify;
+  }
+
   .our-clients_content {
     padding: 0%;
+  }
+
+  .our-clients_content p {
+    text-align: justify;
   }
 
   .contactinfo-new .col-12 {
@@ -3091,7 +3149,31 @@ body {
 }
 
 @media only screen and (max-width: 430px) {
+  .toplink,
+  .contact-us .float{
+    min-height: 38px !important;
+    min-width: 38px !important;
+    max-height: 40px !important;
+    max-width: 40px !important;
+  }
+  .contact-us .float i{
+    scale: 1;
+    margin: 5px;
+  }
+  .tawk-min-container .tawk-button-circle.tawk-button-large {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .contact-us .float{
+    bottom: 12.5%;
+    right: 5.5%;
+  }
   .banner-section .banner_content {
-    padding: 2.5% 5% 30%;
+    padding: 2.5% 5% 15%;   
+  }
+  .content h1,
+  .content span{
+    word-spacing: -2px !important;
+    letter-spacing: -3px !important;
   }
 }
