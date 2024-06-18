@@ -88,7 +88,7 @@ function Send() {
     };
     const serviceID = "service_y60e7mg";
     const templateID = "template_4asymqb";
-    // emailjs.send("Service_ID", "Template_ID", formData)
+    // emailjs.send("Service_ID", "Template_ID", formData)  Email - infobpoaustralia@gmail.com; Password: Dt7@2021
     emailjs.send(serviceID, templateID, params)
         .then(function(response) {
             console.log('Email sent successfully:', response.status, response.text);
